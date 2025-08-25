@@ -1,0 +1,103 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header tabel */
+.table th {
+    background-color: #6DE1D2; /* Teal muda */
+    color: #202123;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Sel isi tabel */
+.table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Baris terakhir agar tidak ada garis bawah */
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover baris */
+.table tbody tr:hover {
+    background-color: #F9F9F9;
+}
+
+/* Badge Style */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px;
+}
+
+.badge-merah {
+    background-color: #F75A5A;
+}
+
+.badge-kuning {
+    background-color: #FFD63A;
+    color: #333;
+}
+
+.badge-biru {
+    background-color: #6DE1D2;
+}
+
+/* Aksi Button Icon */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon {
+    padding: 6px 10px;
+    background-color: #FFA955;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.btn-icon:hover {
+    background-color: #ff9833;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}

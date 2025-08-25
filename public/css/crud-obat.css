@@ -1,0 +1,262 @@
+/* ===== CARD WRAPPER ===== */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    color: #202123;
+}
+
+.button-add {
+    display: inline-block;
+    background-color: #6DE1D2; 
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-bottom: 16px;
+}
+
+.button-add:hover {
+    background-color: #5ccac0;
+}
+
+/* ===== TABEL OBAT ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th {
+    background-color:#5ccac0; 
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* ===== BADGE STATUS ===== */
+.badge {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.bg-warning {
+    background-color: #FFD63A;
+    color: #202123;
+}
+
+.bg-danger {
+    background-color: #F75A5A;
+    color: white;
+}
+
+.bg-success {
+    background-color: #6DE1D2;
+    color: white;
+}
+
+/* Kolom aksi */
+.aksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tombol ikon umum */
+.icon-button {
+    width: 36px;
+    height: 36px;
+    background: #6DE1D2; /* Default */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    padding: 0; 
+}
+
+
+.icon-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); 
+}
+
+.icon-button.edit {
+    background-color: #FFA955; 
+}
+
+.icon-button.edit:hover {
+    background-color: #e48c2e;
+}
+
+.icon-button.delete {
+    background-color: #F75A5A; 
+}
+
+.icon-button.delete:hover {
+    background-color: #d94343;
+}
+
+.search-container {
+    position: relative;
+    max-width: 300px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+    opacity: 0.6;
+}
+
+.header-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.btn-filter-toggle {
+    background-color: #14b8a6;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter-dropdown {
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%; 
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    display: none; 
+}
+
+
+.filter-dropdown h4 {
+    margin-bottom: 10px;
+}
+
+.filter-dropdown label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-dropdown input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.filter-dropdown select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.btn-filter {
+    padding: 8px 12px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #14b8a6;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #0d9488;
+}
+
+
+.status-label {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+
+.status-label.danger {
+    background-color: #F75A5A; 
+}
+
+.status-label.warning {
+    background-color: #FFA955; 
+    color: #333;
+}
+
+.status-label.success {
+    background-color: #14b8a6; 
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+    min-width: 200px;
+}

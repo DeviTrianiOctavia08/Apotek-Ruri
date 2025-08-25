@@ -1,0 +1,122 @@
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Layout Container ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ===== Logo ===== */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    margin-bottom: 15px;     
+}
+
+.logo {
+    width: 100px;     
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 260px;
+    background-color: #6DE1D2; /* Teal muda */
+    color: #333;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+/* ===== Menu Items ===== */
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a,
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    background: none;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    color: #333;
+}
+
+/* Hover Style */
+.sidebar a:hover,
+.sidebar button:hover {
+    background-color: #FFD63A; /* Kuning */
+    color: #202123;
+}
+
+/* Aktif Style */
+.sidebar a.active {
+    background-color: #FFA955; /* Oranye */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Saat aktif tetap hover */
+.sidebar a.active:hover {
+    background-color: #FFA955;
+    color: #fff;
+}
+
+/* ===== Logout Button Style ===== */
+.sidebar form {
+    margin-top: auto;
+}
+
+.sidebar form button {
+    background-color: #F75A5A; /* Coral Merah */
+    color: white;
+}
+
+.sidebar form button:hover {
+    background-color: #e04d4d;
+}
+
+/* ===== Content Area ===== */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9fb;
+}

@@ -1,0 +1,97 @@
+body.auth {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('/image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.85);
+    width: 400px;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.container img.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
